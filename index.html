@@ -1,0 +1,673 @@
+<!doctype html>
+
+<html class="light" lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>MOE-BIZ | Artisanal Healthy Snacks</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500&amp;family=Fredoka+One&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="logo_moe_biz.png" type="image/png" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#e4d9c7",
+              "on-tertiary-fixed": "#1c1c18",
+              "on-surface": "#201b10",
+              "on-primary-container": "#ed746a",
+              "tertiary-fixed-dim": "#c9c6c1",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#feddb3",
+              "on-primary": "#ffffff",
+              "error-container": "#ffdad6",
+              "surface-container-low": "#fef2e0",
+              "on-secondary": "#ffffff",
+              surface: "#fff8f2",
+              "secondary-fixed-dim": "#e1c299",
+              "surface-container": "#f8ecda",
+              "on-surface-variant": "#57423f",
+              background: "#fff8f2",
+              "outline-variant": "#ddc0bc",
+              "on-secondary-container": "#765f3d",
+              "surface-tint": "#a33c35",
+              "surface-bright": "#fff8f2",
+              "on-primary-fixed": "#410002",
+              "surface-container-high": "#f2e7d5",
+              "inverse-on-surface": "#fbefdd",
+              "secondary-container": "#fbdbb0",
+              "on-background": "#201b10",
+              "on-error": "#ffffff",
+              outline: "#8a716f",
+              "tertiary-container": "#32312d",
+              tertiary: "#1d1c19",
+              "primary-fixed-dim": "#ffb4ac",
+              "inverse-surface": "#363024",
+              "surface-container-highest": "#ede1cf",
+              "on-tertiary-fixed-variant": "#484743",
+              "on-error-container": "#93000a",
+              primary: "#410002",
+              "surface-variant": "#ede1cf",
+              "primary-container": "#640d0d",
+              "tertiary-fixed": "#e6e2dc",
+              "primary-fixed": "#ffdad6",
+              secondary: "#725a39",
+              "on-primary-fixed-variant": "#832520",
+              "on-tertiary-container": "#9b9994",
+              error: "#ba1a1a",
+              "on-secondary-fixed-variant": "#584324",
+              "on-tertiary": "#ffffff",
+              "inverse-primary": "#ffb4ac",
+              "on-secondary-fixed": "#281801",
+            },
+            fontFamily: {
+              headline: ["Plus Jakarta Sans"],
+              body: ["Be Vietnam Pro"],
+              label: ["Plus Jakarta Sans"],
+              brand: ["Fredoka One"],
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .glass-header {
+        background: rgba(255, 248, 242, 0.8);
+        backdrop-filter: blur(20px);
+      }
+      body {
+        background-color: #fff8f2;
+        color: #201b10;
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body class="font-body">
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 glass-header">
+      <div
+        class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto"
+      >
+        <div class="flex items-center gap-3">
+          <img
+            alt="MOE-BIZ Logo"
+            class="h-10 w-10 rounded-full object-contain"
+            src="logo_moe_biz.png"
+          />
+          <span class="text-2xl font-brand text-[#640D0D] tracking-wide"
+            >MOE-BIZ</span
+          >
+        </div>
+        <div
+          class="hidden md:flex items-center gap-10 font-headline font-bold tracking-tight text-sm uppercase"
+        >
+          <a
+            class="text-[#640D0D] font-black border-b-2 border-[#640D0D] pb-1"
+            href="#"
+            >Produk</a
+          >
+          <a
+            class="text-[#410002] opacity-80 hover:opacity-100 hover:scale-105 transition-transform duration-300"
+            href="#"
+            >Tentang Kami</a
+          >
+          <a
+            class="text-[#410002] opacity-80 hover:opacity-100 hover:scale-105 transition-transform duration-300"
+            href="#"
+            >Hubungi Kami</a
+          >
+        </div>
+        <button
+          class="bg-primary-container text-on-primary px-8 py-3 rounded-full font-headline font-bold uppercase text-xs tracking-widest hover:scale-105 active:scale-95 transition-all duration-300"
+        >
+          Pesan Sekarang
+        </button>
+      </div>
+    </nav>
+    <main class="pt-24">
+      <!-- Hero Section -->
+      <section
+        class="min-h-[921px] flex items-center px-12 max-w-screen-2xl mx-auto py-20 overflow-visible"
+      >
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div class="space-y-10">
+            <div class="flex flex-wrap gap-3">
+              <span
+                class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider"
+                >Healthy Snack</span
+              >
+              <span
+                class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider"
+                >Gluten-Free</span
+              >
+              <span
+                class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider"
+                >High Fiber</span
+              >
+            </div>
+            <h1
+              class="font-headline text-7xl font-extrabold text-primary-container leading-[1.1] tracking-tight"
+            >
+              MOE-BIZ – <br />
+              <span class="text-on-primary-container">Camilan Enak</span> <br />
+              Tanpa Rasa Bersalah
+            </h1>
+            <p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+              Nikmati kelezatan biskuit karakter dari tepung mocaf dan kale yang
+              bernutrisi tinggi. Gluten-free, kaya serat, dan penuh cinta untuk
+              tubuhmu.
+            </p>
+            <div class="flex gap-6">
+              <button
+                class="bg-primary-container text-on-primary px-10 py-5 rounded-full font-headline font-extrabold text-lg shadow-xl hover:shadow-2xl transition-all"
+              >
+                Coba Sekarang
+              </button>
+              <button
+                class="flex items-center gap-3 text-primary-container font-headline font-bold text-lg hover:translate-x-2 transition-transform"
+              >
+                Lihat Menu
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="absolute -z-10 w-[120%] h-[120%] bg-secondary-fixed/30 rounded-full blur-3xl -top-10 -right-10"
+            ></div>
+            <img
+              alt="Hero MOE-BIZ"
+              class="w-full h-auto drop-shadow-2xl scale-110"
+              data-alt="Playful character-shaped biscuits scattered around a beautiful artisanal ceramic bowl with fresh kale leaves and cassava flour in the background, soft warm lighting"
+              src="logo_moe_biz.png"
+            />
+            <div
+              class="absolute -bottom-10 -left-10 bg-white p-6 rounded-xl shadow-2xl flex items-center gap-4 border-4 border-surface-container"
+            >
+              <div class="bg-green-100 p-3 rounded-full">
+                <span class="material-symbols-outlined text-green-700"
+                  >eco</span
+                >
+              </div>
+              <div>
+                <p class="text-xs font-bold text-on-surface-variant uppercase">
+                  100% Organik
+                </p>
+                <p class="text-sm font-headline font-bold text-primary">
+                  Bahan Lokal Pilihan
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Problem Section -->
+      <section class="py-32 px-12 bg-surface-container-low rounded-t-[5rem]">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+          <span class="text-primary font-brand text-2xl">Refleksi Sejenak</span>
+          <h2
+            class="font-headline text-5xl font-extrabold text-on-surface tracking-tight"
+          >
+            Sering merasa bersalah setelah ngemil?
+          </h2>
+          <p class="text-xl text-on-surface-variant leading-loose">
+            Kebanyakan camilan di pasaran penuh dengan pengawet, gula berlebih,
+            dan gluten yang berat bagi pencernaan. Kita ingin yang enak, tapi
+            tubuh kita berhak mendapatkan yang lebih baik. Ngemil seharusnya
+            memberikan energi, bukan penyesalan.
+          </p>
+        </div>
+      </section>
+      <!-- Solution Section -->
+      <section class="py-32 px-12 relative overflow-hidden">
+        <div
+          class="max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-20 items-center"
+        >
+          <div>
+            <img
+              alt="Logo MOE-BIZ"
+              class="w-full max-w-md mx-auto"
+              data-alt="Official MOE-BIZ brand logo featuring playful typography and a cute character mascot icon, clean studio lighting with cream background"
+              src="biskuit-pack-kemasan.png"
+            />
+          </div>
+          <div class="space-y-8">
+            <h3 class="font-brand text-4xl text-primary-container">
+              Kenalkan, Sahabat Baru Kamu.
+            </h3>
+            <p
+              class="text-2xl font-headline font-bold text-on-surface leading-snug"
+            >
+              Kami menciptakan MOE-BIZ sebagai jawaban atas keinginanmu untuk
+              ngemil sehat setiap hari.
+            </p>
+            <p class="text-lg text-on-surface-variant leading-relaxed">
+              Dibuat dari tepung Mocaf yang bebas gluten dan diperkaya dengan
+              bubuk Kale organik, biskuit kami dirancang tidak hanya untuk
+              memanjakan lidah, tapi juga menutrisi tubuh dengan serat, vitamin,
+              dan antioksidan alami.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Benefits Section -->
+      <section class="py-32 px-12 bg-white rounded-[5rem]">
+        <div class="max-w-screen-2xl mx-auto">
+          <div class="mb-20 text-center space-y-4">
+            <h2
+              class="font-headline text-5xl font-extrabold text-primary-container"
+            >
+              Kebaikan Dalam Setiap Gigitan
+            </h2>
+            <p class="text-on-surface-variant max-w-2xl mx-auto">
+              Diproses secara higienis untuk memastikan kualitas nutrisi tetap
+              terjaga sampai ke tanganmu.
+            </p>
+          </div>
+          <div class="grid md:grid-cols-4 gap-8">
+            <div
+              class="bg-surface-container-low p-10 rounded-xl space-y-6 hover:-translate-y-2 transition-transform duration-500"
+            >
+              <div
+                class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary-container shadow-inner"
+              >
+                <span class="material-symbols-outlined text-4xl"
+                  >energy_savings_leaf</span
+                >
+              </div>
+              <h4 class="font-headline text-2xl font-extrabold">Gluten-Free</h4>
+              <p class="text-on-surface-variant">
+                Aman untuk pencernaan sensitif dan penderita intoleransi gluten.
+              </p>
+            </div>
+            <div
+              class="bg-secondary-container/30 p-10 rounded-xl space-y-6 hover:-translate-y-2 transition-transform duration-500"
+            >
+              <div
+                class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary-container shadow-inner"
+              >
+                <span class="material-symbols-outlined text-4xl"
+                  >nutrition</span
+                >
+              </div>
+              <h4 class="font-headline text-2xl font-extrabold">High Fiber</h4>
+              <p class="text-on-surface-variant">
+                Menjaga rasa kenyang lebih lama dan kesehatan usus tetap prima.
+              </p>
+            </div>
+            <div
+              class="bg-surface-container-low p-10 rounded-xl space-y-6 hover:-translate-y-2 transition-transform duration-500"
+            >
+              <div
+                class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary-container shadow-inner"
+              >
+                <span class="material-symbols-outlined text-4xl">home_pin</span>
+              </div>
+              <h4 class="font-headline text-2xl font-extrabold">
+                Local Sourced
+              </h4>
+              <p class="text-on-surface-variant">
+                Menggunakan bahan baku dari petani lokal untuk mendukung ekonomi
+                daerah.
+              </p>
+            </div>
+            <div
+              class="bg-secondary-container/30 p-10 rounded-xl space-y-6 hover:-translate-y-2 transition-transform duration-500"
+            >
+              <div
+                class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary-container shadow-inner"
+              >
+                <span class="material-symbols-outlined text-4xl">verified</span>
+              </div>
+              <h4 class="font-headline text-2xl font-extrabold">Praktis</h4>
+              <p class="text-on-surface-variant">
+                Kemasan ergonomis yang mudah dibawa ke mana saja saat
+                beraktivitas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Showcase Section -->
+      <section class="py-32 px-12 overflow-hidden">
+        <div class="max-w-screen-2xl mx-auto">
+          <div
+            class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8"
+          >
+            <div class="max-w-2xl">
+              <h2
+                class="font-headline text-6xl font-extrabold text-primary-container"
+              >
+                Sehat, Enak, dan Menggemaskan
+              </h2>
+              <p class="mt-6 text-xl text-on-surface-variant italic">
+                Bentuk karakter unik yang disukai anak-anak maupun dewasa.
+              </p>
+            </div>
+            <div class="flex gap-4">
+              <button
+                class="w-14 h-14 rounded-full border-2 border-primary-container flex items-center justify-center text-primary-container hover:bg-primary-container hover:text-on-primary transition-all"
+              >
+                <span class="material-symbols-outlined">chevron_left</span>
+              </button>
+              <button
+                class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center text-on-primary shadow-lg hover:scale-110 transition-all"
+              >
+                <span class="material-symbols-outlined">chevron_right</span>
+              </button>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div
+              class="group relative bg-surface-container-highest rounded-xl p-8 overflow-hidden flex flex-col"
+            >
+              <div class="flex items-center justify-center h-80 w-full">
+                <img
+                  alt="Mocaf Original"
+                  class="max-h-full max-w-full object-contain group-hover:scale-110 transition-transform duration-700"
+                  data-alt="Close up of a cute bear-shaped biscuit made of golden cassava flour on a rustic linen cloth, bright soft focus background"
+                  src="biskuit-monyet.PNG"
+                />
+              </div>
+              <div class="mt-6 text-center">
+                <h5 class="font-headline text-2xl font-bold">Mocaf Original</h5>
+                <p class="text-on-surface-variant">
+                  Rasa gurih alami tanpa pemanis buatan.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group relative bg-secondary-container rounded-xl p-8 overflow-hidden flex flex-col"
+            >
+              <div class="flex items-center justify-center h-80 w-full">
+                <img
+                  alt="Kale Power"
+                  class="max-h-full max-w-full object-contain group-hover:scale-110 transition-transform duration-700"
+                  data-alt="Character-shaped green biscuits enriched with kale powder arranged playfully on a wooden board, natural kitchen lighting"
+                  src="biskuit-beruang.png"
+                />
+              </div>
+              <div class="mt-6 text-center">
+                <h5 class="font-headline text-2xl font-bold">Kale Power</h5>
+                <p class="text-oknn-surface-variant">
+                  Kaya klorofil dan vitamin untuk daya tahan tubuh.
+                </p>
+              </div>
+            </div>
+            <div
+              class="group relative bg-surface-container-highest rounded-xl p-8 overflow-hidden flex flex-col"
+            >
+              <div class="flex items-center justify-center h-80 w-full">
+                <img
+                  alt="Combo Pack"
+                  class="max-h-full max-w-full object-contain group-hover:scale-110 transition-transform duration-700"
+                  data-alt="Assorted MOE-BIZ biscuit shapes including stars and animals spilling out of a premium paper pouch packaging, warm sunlight"
+                  src="biskuit-kucing.png"
+                />
+              </div>
+              <div class="mt-6 text-center">
+                <h5 class="font-headline text-2xl font-bold">Combo Pack</h5>
+                <p class="text-on-surface-variant">
+                  Dapatkan semua karakter favoritmu dalam satu pouch.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Health Details uhtuk bagian ini -->
+      <section
+        class="py-32 px-12 bg-primary-container text-on-primary rounded-[5rem] mx-6"
+      >
+        <div
+          class="max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-20 items-center"
+        >
+          <div class="space-y-12">
+            <h2 class="font-headline text-5xl font-extrabold leading-tight">
+              Lebih Dari Sekedar Camilan
+            </h2>
+            <ul class="space-y-8">
+              <li class="flex gap-6 items-start">
+                <div class="bg-white/10 p-4 rounded-full">
+                  <span class="material-symbols-outlined text-3xl">bolt</span>
+                </div>
+                <div>
+                  <h6 class="text-xl font-bold mb-2">Energy Boost</h6>
+                  <p class="opacity-80 leading-relaxed">
+                    Karbohidrat kompleks dari mocaf memberikan energi yang
+                    stabil tanpa sugar-crash.
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-6 items-start">
+                <div class="bg-white/10 p-4 rounded-full">
+                  <span class="material-symbols-outlined text-3xl"
+                    >shield_with_heart</span
+                  >
+                </div>
+                <div>
+                  <h6 class="text-xl font-bold mb-2">Immune Support</h6>
+                  <p class="opacity-80 leading-relaxed">
+                    Antioksidan dari kale membantu menangkal radikal bebas dan
+                    memperkuat imun.
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-6 items-start">
+                <div class="bg-white/10 p-4 rounded-full">
+                  <span class="material-symbols-outlined text-3xl"
+                    >gastroenterology</span
+                  >
+                </div>
+                <div>
+                  <h6 class="text-xl font-bold mb-2">Pencernaan Lancar</h6>
+                  <p class="opacity-80 leading-relaxed">
+                    Kandungan serat tinggi membantu proses metabolisme tubuh
+                    setiap hari.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="relative">
+            <div
+              class="aspect-square bg-white/5 rounded-full absolute -inset-10 animate-pulse"
+            ></div>
+            <img
+              alt="Fresh Ingredients"
+              class="rounded-xl object-cover h-[500px] w-full relative z-10"
+              data-alt="Stylized top-down view of fresh kale leaves, cassava root slices, and biscuits arranged as a mandala, vibrant colors, premium photography"
+              src="biskuit-pack.PNG"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Target Audience -->
+      <section class="py-32 px-12">
+        <div class="max-w-screen-2xl mx-auto">
+          <div class="text-center mb-20">
+            <h2
+              class="font-headline text-5xl font-extrabold text-primary-container"
+            >
+              Cocok untuk kamu yang...
+            </h2>
+          </div>
+          <div class="grid md:grid-cols-3 gap-12">
+            <div class="text-center space-y-6">
+              <div
+                class="aspect-video bg-surface-container rounded-xl overflow-hidden"
+              >
+                <img
+                  alt="Students"
+                  class="w-full h-full object-cover"
+                  data-alt="A group of university students studying in a bright library, smiling and sharing a snack, warm collegiate atmosphere"
+                  src="mahasiswa_sibuk.jpg"
+                />
+              </div>
+              <h4 class="font-brand text-2xl text-primary">Mahasiswa Sibuk</h4>
+              <p class="text-on-surface-variant">
+                Butuh teman belajar yang praktis dan bikin otak tetep fokus.
+              </p>
+            </div>
+            <div class="text-center space-y-6">
+              <div
+                class="aspect-video bg-surface-container rounded-xl overflow-hidden"
+              >
+                <img
+                  alt="Families"
+                  class="w-full h-full object-cover"
+                  data-alt="A young family with two children having a picnic in a sunny park, laughing and eating healthy biscuits"
+                  src="keluarga.jpeg"
+                />
+              </div>
+              <h4 class="font-brand text-2xl text-primary">
+                Keluarga Harmonis
+              </h4>
+              <p class="text-on-surface-variant">
+                Memberikan pilihan camilan sehat yang aman untuk seluruh anggota
+                keluarga.
+              </p>
+            </div>
+            <div class="text-center space-y-6">
+              <div
+                class="aspect-video bg-surface-container rounded-xl overflow-hidden"
+              >
+                <img
+                  alt="Gym"
+                  class="w-full h-full object-cover"
+                  data-alt="Active young person in gym wear taking a break, holding a healthy snack pouch, bright modern gym interior"
+                  src="suka_olahraga.jpeg"
+                />
+              </div>
+              <h4 class="font-brand text-2xl text-primary">Pecinta Olahraga</h4>
+              <p class="text-on-surface-variant">
+                Mencari asupan energi sehat sesudah workout tanpa rasa bersalah.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Pricing Section -->
+      <section class="py-32 px-12 bg-surface-container-high rounded-[5rem]">
+        <div
+          class="max-w-xl mx-auto bg-white p-16 rounded-xl shadow-2xl relative text-center"
+        >
+          <div
+            class="absolute -top-6 left-1/2 -translate-x-1/2 bg-on-primary-container text-white px-8 py-2 rounded-full font-bold uppercase text-xs tracking-widest"
+          >
+            Promo Spesial
+          </div>
+          <h2
+            class="font-headline text-3xl font-extrabold text-primary-container mb-4"
+          >
+            Mulai Hidup Sehat
+          </h2>
+          <div class="flex items-center justify-center gap-2 my-10">
+            <span class="text-2xl text-on-surface-variant">Rp</span>
+            <span class="text-8xl font-brand text-primary-container"
+              >6.000</span
+            >
+            <span class="text-xl text-on-surface-variant">/ pack</span>
+          </div>
+          <p class="text-on-surface-variant mb-10">
+            Harga terjangkau untuk nutrisi tak ternilai.
+          </p>
+          <div class="space-y-4">
+            <button
+              class="w-full bg-primary-container text-on-primary py-6 rounded-full font-headline font-extrabold text-xl shadow-xl hover:shadow-2xl transition-all"
+            >
+              Pesan Sekarang
+            </button>
+            <p class="text-xs uppercase font-bold tracking-tighter opacity-60">
+              *Syarat &amp; Ketentuan Berlaku
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Final CTA -->
+      <section class="py-40 px-12 text-center max-w-4xl mx-auto space-y-12">
+        <h2
+          class="font-headline text-6xl font-extrabold text-primary-container"
+        >
+          Siap untuk perubahan kecil dengan dampak besar?
+        </h2>
+        <p class="text-2xl text-on-surface-variant">
+          Mulai hidup sehat dari camilanmu. Bersama MOE-BIZ, ngemil jadi momen
+          yang paling ditunggu.
+        </p>
+        <div class="flex justify-center">
+          <button
+            class="bg-primary text-on-primary px-16 py-8 rounded-full font-headline font-black text-2xl uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-2xl"
+          >
+            Gabung Gerakan Sehat
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#fff8f2] w-full rounded-t-[3rem] mt-20">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center px-16 py-12 w-full max-w-screen-2xl mx-auto"
+      >
+        <div class="space-y-4 text-center md:text-left">
+          <div class="font-brand text-xl text-[#640D0D]">MOE-BIZ</div>
+          <p class="text-[#410002] opacity-70 font-body text-sm">
+            Camilan Karakter Sehat Berbasis Mocaf &amp; Kale
+          </p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8 my-10 md:my-0">
+          <a
+            class="text-[#410002] opacity-70 hover:text-[#640D0D] hover:underline transition-all font-body"
+            href="#"
+            >Instagram</a
+          >
+          <a
+            class="text-[#410002] opacity-70 hover:text-[#640D0D] hover:underline transition-all font-body"
+            href="#"
+            >TikTok</a
+          >
+          <a
+            class="text-[#410002] opacity-70 hover:text-[#640D0D] hover:underline transition-all font-body"
+            href="#"
+            >WhatsApp</a
+          >
+          <a
+            class="text-[#410002] opacity-70 hover:text-[#640D0D] hover:underline transition-all font-body"
+            href="#"
+            >Email Kami</a
+          >
+          <a
+            class="text-[#410002] opacity-70 hover:text-[#640D0D] hover:underline transition-all font-body"
+            href="#"
+            >Kebijakan Privasi</a
+          >
+        </div>
+        <div class="text-[#410002] opacity-70 text-sm font-body">
+          © 2024 MOE-BIZ Artisanal Snacks. Dibuat dengan cinta.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
